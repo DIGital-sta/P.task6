@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3: Тест </title>
+    <script>
+        function checkTest() {
+           
+            var answer = document.getElementById("mathSelect").value;
+
+            if (answer === "") {
+                alert("Оберіть відповідь!");
+            } else if (answer === "12") {
+                alert("Правильно! ");
+            } else {
+                alert("Неправильно. Спробуй ще раз!");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Тест </h2>
+    <p>Скільки буде 3*4?</p>
+
+    <form name="mathForm">
+        <select id="mathSelect" size="1">
+            <option value="">-- Оберіть варіант --</option>
+            <option value="6">6</option>
+            <option value="14">14</option>
+            <option value="12">12</option>
+            <option value="9">9</option>
+        </select>
+        <br><br>
+
+        <input type="button" value="Перевірити результат" onclick="checkTest()">
+    </form>
+</body>
+
+</html>
